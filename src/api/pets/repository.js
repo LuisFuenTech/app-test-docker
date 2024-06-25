@@ -1,4 +1,4 @@
-import { Pet } from '../../db/mongodb/schemas/index.js';
+import { Pet } from '../../db/mongodb/models/index.js';
 
 export const find = () => {
   return Pet.find();
