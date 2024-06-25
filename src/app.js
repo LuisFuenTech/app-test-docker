@@ -1,7 +1,9 @@
 import express from 'express';
 
-import './db/mongodb/index.js';
+import { connectWithRetry } from './db/mongodb/index.js';
 import routes from './routes.js';
+
+connectWithRetry();
 
 const app = express();
 
